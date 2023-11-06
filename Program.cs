@@ -13,6 +13,10 @@ namespace Calculos
             Console.WriteLine("Aplicação Cálculos");
             Console.WriteLine($"4 + 2 ={Aritmetica.Somar(4, 2)}");
             Console.WriteLine($"4 - 2 ={Aritmetica.Subtrair(4, 2)}");
+            double t1 = Conversoes.conversaoTemperatura(Conversoes.conversaoTemperatura.CelsiusFahenheit, 36);
+            double t2 = Conversoes.ConverterTemperatura(Conversoes.conversaoTemperatura.FahrenheitCelsius, 100);
+            Console.WriteLine($"36º Celsius = {t1}º Fahrneit");
+            Console.WriteLine($"100º Fahrenheit = {t2}º Celsius");
             Console.ReadKey();
         }
     }
